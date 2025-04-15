@@ -15,12 +15,12 @@ class StatBoosterPlayer : public PlayerScript
 public:
     StatBoosterPlayer() : PlayerScript("StatBoosterPlayer") { }
 
-    void OnLogin(Player* player) override;
-    void OnLootItem(Player* player, Item* item, uint32 /*count*/, ObjectGuid /*lootguid*/) override;
-    void OnQuestRewardItem(Player* player, Item* item, uint32 /*count*/) override;
-    void OnCreateItem(Player* player, Item* item, uint32 /*count*/) override;
-    void OnGroupRollRewardItem(Player* player, Item* item, uint32 /*count*/, RollVote /*voteType*/, Roll* /*roll*/) override;
-    bool CanCastItemUseSpell(Player* /*player*/, Item* /*item*/, SpellCastTargets const& /*targets*/, uint8 /*cast_count*/, uint32 /*glyphIndex*/) override;
+    void OnPlayerLogin(Player* player) override;
+    void OnPlayerLootItem(Player* player, Item* item, uint32 /*count*/, ObjectGuid /*lootguid*/) override;
+    void OnPlayerQuestRewardItem(Player* player, Item* item, uint32 /*count*/) override;
+    void OnPlayerCreateItem(Player* player, Item* item, uint32 /*count*/) override;
+    void OnPlayerGroupRollRewardItem(Player* player, Item* item, uint32 /*count*/, RollVote /*voteType*/, Roll* /*roll*/) override;
+    bool OnPlayerCanCastItemUseSpell(Player* /*player*/, Item* /*item*/, SpellCastTargets const& /*targets*/, uint8 /*cast_count*/, uint32 /*glyphIndex*/) override;
 };
 
 class StatBoosterWorld : public WorldScript

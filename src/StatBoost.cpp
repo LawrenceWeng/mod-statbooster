@@ -1,6 +1,6 @@
 #include "StatBoost.h"
 
-void StatBoosterPlayer::OnLogin(Player* player)
+void StatBoosterPlayer::OnPlayerLogin(Player* player)
 {
     if (!sBoostConfigMgr->Enable)
     {
@@ -13,7 +13,7 @@ void StatBoosterPlayer::OnLogin(Player* player)
     }
 }
 
-void StatBoosterPlayer::OnLootItem(Player* player, Item* item, uint32 /*count*/, ObjectGuid /*lootguid*/)
+void StatBoosterPlayer::OnPlayerLootItem(Player* player, Item* item, uint32 /*count*/, ObjectGuid /*lootguid*/)
 {
     if (!sBoostConfigMgr->Enable)
     {
@@ -44,7 +44,7 @@ void StatBoosterPlayer::OnLootItem(Player* player, Item* item, uint32 /*count*/,
     }
 }
 
-void StatBoosterPlayer::OnQuestRewardItem(Player* player, Item* item, uint32 /*count*/)
+void StatBoosterPlayer::OnPlayerQuestRewardItem(Player* player, Item* item, uint32 /*count*/)
 {
     if (!sBoostConfigMgr->Enable)
     {
@@ -75,7 +75,7 @@ void StatBoosterPlayer::OnQuestRewardItem(Player* player, Item* item, uint32 /*c
     }
 }
 
-void StatBoosterPlayer::OnCreateItem(Player* player, Item* item, uint32 /*count*/)
+void StatBoosterPlayer::OnPlayerCreateItem(Player* player, Item* item, uint32 /*count*/)
 {
     if (!sBoostConfigMgr->Enable)
     {
@@ -106,7 +106,7 @@ void StatBoosterPlayer::OnCreateItem(Player* player, Item* item, uint32 /*count*
     }
 }
 
-void StatBoosterPlayer::OnGroupRollRewardItem(Player* player, Item* item, uint32 /*count*/, RollVote /*voteType*/, Roll* /*roll*/)
+void StatBoosterPlayer::OnPlayerGroupRollRewardItem(Player* player, Item* item, uint32 /*count*/, RollVote /*voteType*/, Roll* /*roll*/)
 {
     if (!sBoostConfigMgr->Enable)
     {
@@ -137,7 +137,7 @@ void StatBoosterPlayer::OnGroupRollRewardItem(Player* player, Item* item, uint32
     }
 }
 
-bool StatBoosterPlayer::CanCastItemUseSpell(Player* player, Item* item, SpellCastTargets const& targets, uint8 /*cast_count*/, uint32 /*glyphIndex*/)
+bool StatBoosterPlayer::OnPlayerCanCastItemUseSpell(Player* player, Item* item, SpellCastTargets const& targets, uint8 /*cast_count*/, uint32 /*glyphIndex*/)
 {
     if (!item)
     {
