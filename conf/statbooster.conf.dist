@@ -9,7 +9,7 @@
 #					1 - (Enabled)
 #
 
-StatBooster.Enable = 0
+StatBooster.Enable = 1
 
 #
 #	StatBooster.VerboseEnable
@@ -61,7 +61,7 @@ StatBooster.OnLootItemEnable = 1
 #		Default:	1 - (Enabled)
 #
 
-StatBooster.OnQuestRewardItemEnable = 1
+StatBooster.OnQuestRewardItemEnable = 0
 
 #
 #	StatBooster.OnCraftItemEnable
@@ -70,7 +70,7 @@ StatBooster.OnQuestRewardItemEnable = 1
 #		Default:	1 - (Enabled)
 #
 
-StatBooster.OnCraftItemEnable = 1
+StatBooster.OnCraftItemEnable = 0
 
 #
 #	StatBooster.LootItemChance
@@ -79,7 +79,7 @@ StatBooster.OnCraftItemEnable = 1
 #		Range:		0-100
 #
 
-StatBooster.LootItemChance = 100
+StatBooster.LootItemChance = 20
 
 #
 #	StatBooster.QuestRewardChance
@@ -113,7 +113,7 @@ StatBooster.CraftItemChance = 100
 #					5 - (Legendary)
 #
 
-StatBooster.MinQuality = 2
+StatBooster.MinQuality = 0
 
 #
 #	StatBooster.MaxQuality
@@ -126,7 +126,7 @@ StatBooster.MinQuality = 2
 #					5 - (Legendary)
 #
 
-StatBooster.MaxQuality = 4
+StatBooster.MaxQuality = 5
 
 ########################################
 
